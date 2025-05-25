@@ -1,18 +1,44 @@
 
-# login_app
+# Flutter Login App with Firebase
 
-A new Flutter project.
+A simple Flutter application implementing user authentication (register/login) using Firebase Authentication.
 
-## Getting Started
+## ✨ Features
 
-This project is a starting point for a Flutter application.
+- Firebase-based user authentication
+- Login & Registration with:
+  - Full Name
+  - Email Address
+  - Password
+- Input validation for all fields
+- Dynamic welcome message on Home page
+- Logout functionality that signs out the user and redirects to Login page
 
-A few resources to get you started if this is your first Flutter project:
+## 📱 Screens
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- **Login Page**  
+  Users can log in using their email and password. Includes validation and error handling.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- **Register Page**  
+  New users can sign up by providing full name, email, and password. Stores display name in Firebase and Firestore.
+
+- **Home Page**  
+  Greets the user with their full name:  
+  `"Hey, <FullName>! You're successfully logged in."`  
+  Includes a logout button.
+
+## 🔧 Technologies Used
+
+- [Flutter](https://flutter.dev/)
+- [Firebase Authentication](https://firebase.google.com/products/auth)
+- [Cloud Firestore](https://firebase.google.com/products/firestore)
+- Dart
+
+## 🚀 Getting Started
+
+### 1. Clone the project
+
+```bash
+git clone https://github.com/nanacode4/Flutter-app.git
+cd Flutter-app
 
