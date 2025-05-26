@@ -2,7 +2,7 @@
 
 A simple Flutter application implementing user login and registration using Firebase Authentication. This project is designed to demonstrate how to create a functional and user-friendly authentication flow in Flutter.
 
----
+
 
 ## ✨ Features
 
@@ -33,9 +33,8 @@ A simple Flutter application implementing user login and registration using Fire
 - [Flutter](https://flutter.dev/)
 - [Firebase Authentication](https://firebase.google.com/products/auth)
 - [Cloud Firestore](https://firebase.google.com/products/firestore)
-- Dart language
+- Dart 
 
----
 
 ## 🚀 Getting Started
 
@@ -44,32 +43,45 @@ A simple Flutter application implementing user login and registration using Fire
 ```bash
 git clone https://github.com/nanacode4/Flutter-app.git
 cd Flutter-app
+````
+
+
 
 ### 2. Install dependencies
+
 ```bash
 flutter pub get
+```
+
+---
 
 ### 3. Configure Firebase
-Go to Firebase Console
 
-Create a new project and register your Flutter app (Android/iOS)
+Follow these steps:
 
-Enable Email/Password under Authentication → Sign-in method
+1. Go to [Firebase Console](https://console.firebase.google.com/)
+2. Create a new project and register your Flutter app (Android/iOS)
+3. Enable **Email/Password** under **Authentication → Sign-in method**
+4. Enable **Cloud Firestore** and set test mode rules (for development)
+5. Download and add Firebase config files:
 
-Enable Cloud Firestore and set temporary dev rules (for testing)
-
-Download and add Firebase config files:
-
-google-services.json → android/app/
-
-GoogleService-Info.plist → ios/Runner/
-
-Generate or add firebase_options.dart using:
+   * `google-services.json` → `android/app/`
+   * `GoogleService-Info.plist` → `ios/Runner/`
+6. Generate `firebase_options.dart` using the FlutterFire CLI:
 
 ```bash
 flutterfire configure
+```
 
-###4. Run the app
+---
+
+### 4. Run the app
 
 ```bash
 flutter run
+```
+
+```
+
+
+
