@@ -1,7 +1,8 @@
-
 # Flutter Login App with Firebase
 
-A simple Flutter application implementing user authentication (register/login) using Firebase Authentication.
+A simple Flutter application implementing user login and registration using Firebase Authentication. This project is designed to demonstrate how to create a functional and user-friendly authentication flow in Flutter.
+
+---
 
 ## ✨ Features
 
@@ -11,34 +12,64 @@ A simple Flutter application implementing user authentication (register/login) u
   - Email Address
   - Password
 - Input validation for all fields
-- Dynamic welcome message on Home page
-- Logout functionality that signs out the user and redirects to Login page
+- Stores user display name in Firebase
+- Greets users by name on login
+- Logout functionality that signs out and redirects to login
 
-## 📱 Screens
+---
 
-- **Login Page**  
-  Users can log in using their email and password. Includes validation and error handling.
+## 📱 Screenshots
 
-- **Register Page**  
-  New users can sign up by providing full name, email, and password. Stores display name in Firebase and Firestore.
+<div align="center">
+  <img src="image/login.png" alt="Login Page" width="30%" />
+  <img src="image/register.png" alt="Register Page" width="30%" />
+  <img src="image/home.png" alt="Home Page" width="30%" />
+</div>
 
-- **Home Page**  
-  Greets the user with their full name:  
-  `"Hey, <FullName>! You're successfully logged in."`  
-  Includes a logout button.
+---
 
-## 🔧 Technologies Used
+## 🛠 Technologies Used
 
 - [Flutter](https://flutter.dev/)
 - [Firebase Authentication](https://firebase.google.com/products/auth)
 - [Cloud Firestore](https://firebase.google.com/products/firestore)
-- Dart
+- Dart language
+
+---
 
 ## 🚀 Getting Started
 
-### 1. Clone the project
+### 1. Clone this repo
 
 ```bash
 git clone https://github.com/nanacode4/Flutter-app.git
 cd Flutter-app
 
+### 2. Install dependencies
+```bash
+flutter pub get
+
+### 3. Configure Firebase
+Go to Firebase Console
+
+Create a new project and register your Flutter app (Android/iOS)
+
+Enable Email/Password under Authentication → Sign-in method
+
+Enable Cloud Firestore and set temporary dev rules (for testing)
+
+Download and add Firebase config files:
+
+google-services.json → android/app/
+
+GoogleService-Info.plist → ios/Runner/
+
+Generate or add firebase_options.dart using:
+
+```bash
+flutterfire configure
+
+###4. Run the app
+
+```bash
+flutter run
