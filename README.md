@@ -16,7 +16,7 @@ A simple Flutter application implementing user login and registration using Fire
 - Greets users by name on login
 - Logout functionality that signs out and redirects to login
 
----
+
 
 ## 📱 Screenshots
 
@@ -26,7 +26,6 @@ A simple Flutter application implementing user login and registration using Fire
   <img src="image/home.png" alt="Home Page" width="30%" />
 </div>
 
----
 
 ## 🛠 Technologies Used
 
@@ -53,7 +52,6 @@ cd Flutter-app
 flutter pub get
 ```
 
----
 
 ### 3. Configure Firebase
 
@@ -73,7 +71,6 @@ Follow these steps:
 flutterfire configure
 ```
 
----
 
 ### 4. Run the app
 
@@ -81,7 +78,6 @@ flutterfire configure
 flutter run
 ```
 
-```
 
 
 
